@@ -1,0 +1,51 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper>h1,.wrapper>p{
+    text-align: center;
+}
+
+.accordion{
+    display: flex;
+    justify-content: space-between;
+    padding: .9rem 1rem;
+}
+
+.faq
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.faq button
+{
+    width: 100%;
+    font-size: 1.2rem;
+    transition: .4s;
+    border: none;
+    outline: none;
+}
+
+.faq button:hover{
+    background-color: rgba(183, 178, 178, 0.7);
+    cursor: pointer;
+}
+
+.faq >p {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 auto;
+    background-color: rgba(183, 178, 178, 0.7);
+}
+
+.active.faq>p{
+    display: none;
+}
+
+.bx{
+    font-size: 1.5rem;
+}

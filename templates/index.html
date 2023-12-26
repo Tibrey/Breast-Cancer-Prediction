@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breast Cancer</title>
+    <script
+      type="text/javascript"
+      src="{{url_for('static',filename='index.js')}}"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/style.css')}}"
+    />
+  </head>
+  <body>
+    <!-- {% block nav %} -->
+    <nav>
+      <div class="container">
+        <div>
+          <a href="{{url_for('index')}}"
+            ><img src="../static/images/logo.png" alt="logo" class="logo"
+          /></a>
+        </div>
+  
+        <div id="mobile-menu" class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div>
+          <ul class="list">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('predict') }}">Predict</a></li>
+            <li><a href="{{ url_for('data') }}">Data</a></li>
+            <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- {% endblock %} -->
+
+    {%block section %}
+    <section class="hero">
+      <div class="hero_img">
+        <img src="../static/images/images.png" alt="" />
+      </div>
+
+      <div class="hero_info">
+        <h1>
+          Breast Cancer Awareness Month
+          <span class="date">October 19</span>
+          <span class="description"
+            >The international
+            <span class="underline">Breast Cancer day</span></span
+          >
+        </h1>
+      </div>
+    </section>
+    {%endblock%}
+  </body>
+</html>

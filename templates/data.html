@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/data.css')}}"
+    />
+  </head>
+  <body>
+    {% extends "index.html" %} {% block section %}
+    <div class="data_container">
+      <div class="overview">
+        <div class="catch_img">
+          <img src="../static/images/ribbon_butterfly.png" alt="" />
+        </div>
+        <h1>Overview of Breast Cancer</h1>
+        <p>
+          Cancer is one of the leading causes of death globally. Breast Cancer♋
+          is a disease in which abnormal breast cells grow out of control and
+          form tumors.If left unchecked, the tumors can spread through out the
+          body and become fatal. Breast cancer originates in the milk ducts or
+          lobules of the breast. The initial, non-life-threatening form is
+          confined to these structures (in situ). However, cancer cells can
+          progress to invade nearby breast tissue, forming tumors that manifest
+          as lumps or thickening. Invasive cancers may further spread to nearby
+          lymph nodes or other organs, posing a risk of metastasis, which can be
+          fatal. Treatment approaches are personalized, considering factors such
+          as the individual, cancer type, and extent of spread
+        </p>
+      </div>
+
+      <div class="risk">
+        <!-- <div class="ribbon_img">
+            <img src="../static/images/ribbon.png" alt="" />
+          </div> -->
+
+        <h1>Risk Factors for Breast Cancer</h1>
+        <p>
+          The primary risk factor for breast cancer is female gender, with only
+          0.5–1% of cases occurring in men. Treatment for male breast cancer
+          follows the same principles as for women. Various factors, including
+          increasing age, obesity, alcohol consumption, family history,
+          radiation exposure, reproductive factors, tobacco use, and
+          postmenopausal hormone therapy, elevate breast cancer risk.
+          Approximately half of cases develop in women without identifiable risk
+          factors beyond being female and over 40 years old. While a family
+          history increases risk, most diagnosed women lack known familial
+          connections to breast cancer, and the absence of such history doesn't
+          necessarily imply reduced risk. Certain high-penetrance gene
+          mutations, notably in BRCA1, BRCA2, and PALB-2, significantly elevate
+          breast cancer risk. Women carrying these mutations may consider risk
+          reduction strategies like preventive breast surgery.
+        </p>
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>

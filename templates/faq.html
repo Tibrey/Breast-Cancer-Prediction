@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/faq.css')}}"
+    />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    {% extends "index.html" %}
+    
+    {% block section %}
+
+    <div class="wrapper">
+      <h1>Breast Cancer</h1>
+      <p>The Frequently Asked Question</p>
+
+      <div class="faq">
+        <button class="accordion">
+          What is Breast cancer?
+          <i class="bx bx-chevron-down"></i>
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          officia debitis quo, quia perspiciatis sunt doloremque cupiditate est
+          eum cumque sed consequuntur quod? Molestiae facere reiciendis
+          consectetur deleniti doloremque. Delectus.
+        </p>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What is Breast cancer?
+          <i class="bx bx-chevron-down"></i>
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          officia debitis quo, quia perspiciatis sunt doloremque cupiditate est
+          eum cumque sed consequuntur quod? Molestiae facere reiciendis
+          consectetur deleniti doloremque. Delectus.
+        </p>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What is Breast cancer?
+          <i class="bx bx-chevron-down"></i>
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          officia debitis quo, quia perspiciatis sunt doloremque cupiditate est
+          eum cumque sed consequuntur quod? Molestiae facere reiciendis
+          consectetur deleniti doloremque. Delectus.
+        </p>
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>
